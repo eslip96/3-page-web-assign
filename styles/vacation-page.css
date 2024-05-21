@@ -1,0 +1,54 @@
+body {
+  background-color: tan;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.nav-bar-wrapper {
+  display: flex;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #ffd1dc;
+  color: black;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.nav-bar-wrapper a {
+  display: flex;
+  font-size: bold;
+  text-decoration: none;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-vacation-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 10px 10px 10px;
+  background-color: wheat;
+}
+
+.vacation-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}

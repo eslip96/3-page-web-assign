@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/vacation-page.css" />
+    <script
+      src="https://kit.fontawesome.com/ef39a3e865.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav-bar-container">
+      <div class="nav-bar-wrapper">
+        <i class="fa-solid fa-tree"></i>
+        <a href="/home-page.html">Home</a>
+        <a href="/info-page.html">Info</a>
+        <a href="/conclusion-page.html">The solution</a>
+      </div>
+    </div>
+    <div class="main-body-container">
+      <div class="hero-container">
+        <div class="hero-wrapper">
+          <h1>CONGRATS YOUVE EARNED A FREE ALL PAID BEAR VACATION!!</h1>
+        </div>
+      </div>
+      <div class="main-vacation-container">
+        <div class="vaction-main-wrapper">
+          <h2>Vacation Fill out Form!</h2>
+          <form action="https://httpbin.org/post" method="post">
+            <div>
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div>
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="phone-number">Phone-number:</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-456-7890"
+                  required
+                />
+              </div>
+              <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="preferred-delivery-date">Check-in date:</label>
+              <input
+                type="date"
+                id="check-in-date"
+                name="check-in-date"
+                required
+              />
+              <label for="preferred-delivery-date">Check-out Date:</label>
+              <input
+                type="date"
+                id="check-out-date"
+                name="check-out-date"
+                required
+              />
+            </div>
+            <div>
+              <label>Basic or Premium package</label>
+              <input
+                type="radio"
+                id="basic-package"
+                name="vacation-type"
+                value="basic-package"
+              />
+              <label for="basic-package">Basic-package</label><br />
+              <input
+                type="radio"
+                id="Premium"
+                name="vacation-type"
+                value="Premium"
+              />
+              <label for="Premium"
+                >Premium-package(extra details will be disclosed upon
+                arrival)</label
+              ><br />
+            </div>
+            <div>
+              <label>Select your activities:</label><br />
+              <input
+                type="checkbox"
+                id="bear-mueseum"
+                name="activities"
+                value="bear-mueseum"
+              />
+              <label for="bear-mueseum">Bear-mueseum</label><br />
+              <input
+                type="checkbox"
+                id="bear-coaster"
+                name="activities"
+                value="bear-coaster"
+              />
+              <label for="bear-coaster">Bear-coaster</label><br />
+              <input
+                type="checkbox"
+                id="bear-concert"
+                name="activities"
+                value="bear-concert"
+              />
+              <label for="bear-concert">Bear-concert</label>
+              <input
+                type="checkbox"
+                id="gambling"
+                name="activities"
+                value="Gambling"
+              />
+              <label for="Gambling">RiverBoat Gambling</label>
+              <input type="checkbox" id="bear-buffet" name="bear-buffet" />
+              <label for="bear-buffet">Bear-buffet</label>
+            </div>
+            <div>
+              <label>Smoking room or non smoking room:</label><br />
+              <input
+                type="radio"
+                id="smoking"
+                name="room-type"
+                value="smoking"
+                required
+              />
+              <label for="smoking">Smoking</label><br />
+              <input
+                type="radio"
+                id="non-smoking"
+                name="room-type"
+                value="non-smoking"
+                required
+              />
+              <label for="non-smoking">Non-Smoking</label><br />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-wrapper">
+        <h5>More Info</h5>
+        <h5>Terms&Conditions</h5>
+      </div>
+    </div>
+  </body>
+</html>
