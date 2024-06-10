@@ -1,0 +1,19 @@
+@media (max-width: 425px) {
+  .main-body-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-body-container > .main-vacation-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-body-container
+    > .main-vacation-container
+    > .contact-info-container
+    > .contact-info-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

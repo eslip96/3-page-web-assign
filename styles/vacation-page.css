@@ -20,32 +20,49 @@ body {
   font-size: bold;
   text-decoration: none;
 }
-.hero-container {
+/* .hero-container {
   display: flex;
   justify-content: center;
+} */
+.hero-wrapper {
+  height: 800px;
+  position: relative;
+  background-image: url(/images/halcyon-maui-beach-sunset.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-wrapper > .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 10px;
+  font-size: 1.2em;
+  opacity: 0.8;
+  color: lightgray;
 }
 
 .main-vacation-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   border-radius: 5px;
   margin: 10px 10px 10px;
   background-color: wheat;
 }
 
-.vacation-form-wrapper {
+.main-vacation-container > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid red;
+  justify-content: center;
 }
 
-.contact-info-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-info-wrapper {
+.contact-info-container > .contact-info-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +78,6 @@ body {
 .footer-container {
   background-color: #333;
   color: #fff;
-  padding: 20px;
   width: 100%;
   bottom: 0;
 }
